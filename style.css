@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+}
+
+/* variables change according to yours */
+:root{
+  --primary-text-color: rgb(0, 0, 0);
+  --secondary-text-color:  rgb(6, 6, 134);
+  /* --secondary-text-color-light:  rgb(0, 0, 8); */
+}
+
+/* body: change according to our needs */s
+
+body{
+  color: var(--primary-text-color);
+}
+
+p{
+  color: var(--primary-text-color);
+  line-height: 1.4rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+.container{
+  max-width: 1180px;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+nav{
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 4px rgb(168, 164, 157);
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  left: 0;
+  right: 0;
+}
+
+.nav-links ul{
+   gap: 16px;
+}
+.main-nav{
+  justify-content: space-between;
+  padding-block: 8px;
+}
+
+.company-logo img{
+  width: 50px;
+}
+
+.hover-link{
+  cursor: pointer;
+}
+
+.hover-link:hover{
+  color: var(--secondary-text-color);
+}
+
+.hover-link:active{
+    color: red;
+}
+
+.nav-item.active{
+  color: red;
+}
+.search-bar{
+  height: 32px;
+  gap: 8px;
+}
+
+.news-input{
+  width: 200px;
+  height: 100%;
+  padding-inline: 12px;
+  border-radius: 4px;
+  border: 2px solid rgb(6, 6, 134);
+}
+
+.search-btn{
+  background-color: var(--secondary-text-color);
+  color: white;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 4px;
+}
+
+.search-btn:hover{
+  background-color: var(--primary-text-color);
+}
+
+main{
+  padding-block: 20px;
+  margin-top: 80px;
+}
+
+.cards-container{
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  align-items: start;
+}
+
+.card{
+  width: 360px;
+  min-height: 400px;
+  box-shadow: 0 0 4px rgb(168, 164, 157);
+   border-radius: 4px;
+   cursor: pointer;
+   background-color: rgb(239, 239, 251);
+   overflow: hidden;
+   transition: all 0.3 ease; 
+}
+
+.card:hover{
+  box-shadow: 1px 1px 8px rgb(207, 201, 201);
+  background: rgb(255, 255, 255);
+  transform: translateY(-2px);
+}
+
+.card-header img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.cards-content{
+  padding: 12px;
+}
+
+.news-source{
+  margin-block: 12px;
+}
